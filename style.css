@@ -1,6 +1,6 @@
 body{
 
-    background-color:black;
+    background-color:chocolate;
 }
 h2{
 
@@ -13,3 +13,12 @@ h1{
 /*  
     comentario
                     */
+
+@media screen and (min-width:0) and (max-width: 480px ){
+    body{
+        background-color:blue;
+    }
+
+
+    
+}
