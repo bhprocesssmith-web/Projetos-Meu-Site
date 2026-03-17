@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Menu JS Separado</title>
+<title>Pagina Principal</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,14 +12,16 @@
 <body>
 
 <div class="menu">
-    <button onclick="mostrar('home')">Home</button>
-    <button onclick="mostrar('jogo')">Jogo</button>
-    <button onclick="mostrar('config')">Config</button>
+    <button onclick="tamanhogrande(this)">Desenho</button>
+    <button onclick="tamanhopequeno(this)">Home</button>
 </div>
 
-<div class="conteudo" id="conteudo">
-    <h1>Meu Site</h1>
-    <p>Teste responsivo</p>
+<div class="conteudo">
+
+<p id="texto"></p>
+
+<img id="gif" src="gifs (2).gif">
+
 </div>
 
 <script src="script.js"></script>

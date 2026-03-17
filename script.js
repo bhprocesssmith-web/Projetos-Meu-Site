@@ -1,13 +1,36 @@
-function mostrar(secao) {
-    const conteudo = document.getElementById("conteudo");
+function removerAtivo(){
 
-    if (secao === "home") {
-        conteudo.innerHTML = "<h2>Home</h2><p>Página inicial</p>";
-    }
-    else if (secao === "jogo") {
-        conteudo.innerHTML = "<h2>Jogo</h2><p>Iniciar jogo aqui</p>";
-    }
-    else if (secao === "config") {
-        conteudo.innerHTML = "<h2>Configurações</h2><p>Ajustes do sistema</p>";
-    }
+    const botoes = document.querySelectorAll(".menu button");
+
+    botoes.forEach(btn => {
+        btn.classList.remove("ativo");
+    });
+
+}
+
+function tamanhogrande(botao){
+
+    const texto = document.getElementById("texto");
+    const gif = document.getElementById("gif");
+
+    texto.innerText = "Com Desenho";
+
+    gif.style.display = "block";
+
+    removerAtivo();
+    botao.classList.add("ativo");
+}
+
+function tamanhopequeno(botao){
+
+    const texto = document.getElementById("texto");
+    const gif = document.getElementById("gif");
+
+    texto.innerText = "Sem Desenho";
+
+    gif.style.display = "none";
+    //gif.style.display = "block";
+
+    removerAtivo();
+    botao.classList.add("ativo");
 }
