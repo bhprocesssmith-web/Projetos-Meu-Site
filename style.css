@@ -1,24 +1,64 @@
-body{
-
-    background-color:black;
+body {
+    margin: 0;
+    font-family: Arial;
 }
-h2{
 
+.menu {
+    background: #222;
+    padding: 10px;
+}
+
+.menu button {
+    background: #444;
     color: white;
-}
-h1{
-    color: yellow;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
-/*  
-    comentario
-                    */
+.menu button:hover {
+    background: #666;
+}
 
-@media screen and (min-width:0) and (max-width: 480px ){
-    body{
-        background-color:blue;
+.conteudo {
+    padding: 20px;
+}
+
+
+/* ===== CELULAR ===== */
+@media (max-width: 480px) {
+
+    body {
+        background-color: blue;
     }
 
+    .menu {
+        flex-direction: column; /* vira vertical */
+        align-items: center;
+        display: flex; /* IMPORTANTE */
+    }
 
-    
+    .menu button {
+        width: 90%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        background-color: gray;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu button {
+        width: 90%;
+        margin: 5px 0;
+    }
 }
